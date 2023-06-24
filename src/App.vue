@@ -85,17 +85,22 @@ export default {
 <style scoped>
 @font-face {
   font-family: 'Hamiltone';
-  src: url("./assets/fonts/hamiltone/Hamiltone-Demo.otf") format("opentype");
+  src: url("/assets/Hamiltone-Demo.otf") format("opentype");
   }
 
 @font-face {
   font-family: 'technique';
-  src: url('./assets/fonts/technique/techniqu.ttf');
+  src: url('/assets/techniqu.ttf');
 }
 
 @font-face {
   font-family: 'Alba';
-  src: url('./assets/fonts/alba.super.ttf');
+  src: url('/assets/alba.super.ttf');
+}
+
+@font-face {
+  font-family: 'nasa';
+  src: url('/assets/nasalization-rg.otf')
 }
 .app {
   height: 96vh;
@@ -145,7 +150,8 @@ export default {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: 'Alba';
+  font-family: 'nasa';
+  font-weight: 900;
   text-align: center;
   height: 70vh;
 }

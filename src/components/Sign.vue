@@ -13,5 +13,7 @@
 <style scoped>
   p {
     font-family: 'Hamiltone';
+    font-size: 40px;
+    font-weight: bold;
   }
 </style>

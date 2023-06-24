@@ -48,4 +48,8 @@ img {
 .carousel {
   width: 60vh;
 }
+
+img:hover {
+  cursor: pointer;
+}
 </style>

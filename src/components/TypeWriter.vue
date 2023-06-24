@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <h1>
-      I know how to code in
+      I'm a passionate guy who loves
       <span class="typed-text">{{ typeValue }}</span>
       <span class="blinking-cursor">|</span>
       <span class="cursor" :class="{ typing: typeStatus }">&nbsp;</span>
@@ -16,7 +16,7 @@ export default {
     return {
       typeValue: "",
       typeStatus: false,
-      displayTextArray: ["React", "Vue 3", "Symfony", "Node"],
+      displayTextArray: ["cinema", "video games", "writing", "art", "beer"],
       typingSpeed: 100,
       erasingSpeed: 100,
       newTextDelay: 2000,
@@ -72,7 +72,7 @@ export default {
  h1 {
 	 font-size: 3rem;
 	 font-weight: normal;
-     font-family: 'Alba';
+    font-family: 'Alba';
 }
  h1 span.typed-text {
 	 color: #d2b94b;
