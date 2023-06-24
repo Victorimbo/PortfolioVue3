@@ -59,7 +59,7 @@
   color: black;
   background-position: center;
   background-repeat: no-repeat;
-  animation: backgroundAnimation 10s infinite linear;
+  animation: backgroundAnimation 60s infinite linear;
 }
 
 @keyframes backgroundAnimation {
