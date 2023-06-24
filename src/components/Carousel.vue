@@ -26,9 +26,9 @@ export default {
   data() {
     return {
       slides: [
-        { id: 1, image: 'src/assets/spotify.png' },
-        { id: 2, image: 'src/assets/mythic.png' },
-        { id: 3, image: 'src/assets/quizz.jpg' },
+        { id: 1, image: '/assets/spotify.png' },
+        { id: 2, image: '/assets/mythic.png' },
+        { id: 3, image: '/assets/quizz.jpg' },
       ],
     };
   },

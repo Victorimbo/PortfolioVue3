@@ -27,5 +27,7 @@ export default {
   background-color: #fff;
   padding: 20px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  width: 50%;
+  height: 50%;
 }
 </style>

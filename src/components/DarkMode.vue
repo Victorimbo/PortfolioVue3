@@ -55,15 +55,28 @@
   color: darkviolet;
 }
 [theme="custom-light"] {
-  background-color: lightblue;
-  color: orangered;
+  background-image: url('/assets/60s.jpg');
+  color: black;
+  background-position: center;
+  background-repeat: no-repeat;
+  animation: backgroundAnimation 10s infinite linear;
 }
+
+@keyframes backgroundAnimation {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 100% 0;
+  }
+}
+
 [theme="custom-dark"] .button-text {
-  content: "70s mode";
+  content: "60s mode";
 }
 
 [theme="custom-light"] .button-text {
-  content: "60s mode";
+  content: "70s mode";
 }
 
 /* button */

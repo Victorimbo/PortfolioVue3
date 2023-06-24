@@ -1,6 +1,6 @@
 <template>
   <div>
-<a href="src/assets/Victor-imbo.pdf" download="Victor-Imbo.pdf">Download Me!</a>
+<a href="/assets/Victor-imbo.pdf" download="Victor-Imbo.pdf">Download Me!</a>
     <TypeWriter />
   </div>
   
