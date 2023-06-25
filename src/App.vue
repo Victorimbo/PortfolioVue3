@@ -1,5 +1,5 @@
 <template>
-  <div class="app" @wheel="handleScroll" :theme="themeClass">
+  <div class="app" @wheel="handleScroll" @touchstart="handleTouchStart" @touchmove="handleTouchMove" @touchend="handleTouchEnd" :theme="themeClass">
     <div v-if="isLoading" class="loading-overlay">
       <Loading />
     </div>
@@ -21,7 +21,6 @@
     </div>
   </div>
 </template>
-
 
 <script>
 import Home from './components/pages/Home.vue';
@@ -50,7 +49,9 @@ export default {
     return {
       activeComponent: "Home",
       components: ["Home", "About", "Projects", "Contact"],
-      isLoading: true
+      isLoading: true,
+      touchStartX: 0,
+      touchEndX: 0,
     };
   },
   computed: {
@@ -70,6 +71,25 @@ export default {
 
       this.activeComponent = this.components[idComponent];
     },
+    handleTouchStart(event) {
+      this.touchStartX = event.touches[0].clientX;
+    },
+    handleTouchMove(event) {
+      this.touchEndX = event.touches[0].clientX;
+    },
+    handleTouchEnd() {
+  let idComponent = this.components.indexOf(this.activeComponent);
+  const swipeDistance = this.touchEndX - this.touchStartX;
+  const threshold = 300;
+
+  if (swipeDistance < -threshold && this.activeComponent != "Contact") {
+    idComponent++;
+  } else if (swipeDistance > threshold && this.activeComponent != "Home") {
+    idComponent--;
+  }
+  this.activeComponent = this.components[idComponent];
+  },
+
     changeComponent(componentName) {
       this.activeComponent = componentName;
     },
@@ -86,7 +106,7 @@ export default {
 @font-face {
   font-family: 'Hamiltone';
   src: url("/assets/Hamiltone-Demo.otf") format("opentype");
-  }
+}
 
 @font-face {
   font-family: 'technique';
@@ -100,8 +120,9 @@ export default {
 
 @font-face {
   font-family: 'nasa';
-  src: url('/assets/nasalization-rg.otf')
+  src: url('/assets/nasalization-rg.otf');
 }
+
 .app {
   height: 96vh;
   overflow: hidden;
@@ -171,13 +192,12 @@ export default {
 .sign {
   margin-right: 20px;
 }
+
 .dark-mode {
   margin-left: 20px;
 }
 
 /* responsive */
-
-
 @media (max-width: 768px) {
   .content-container {
     height: 20vh;
