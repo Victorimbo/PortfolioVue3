@@ -80,7 +80,7 @@ export default {
     handleTouchEnd() {
   let idComponent = this.components.indexOf(this.activeComponent);
   const swipeDistance = this.touchEndX - this.touchStartX;
-  const threshold = 300;
+  const threshold = 50;
 
   if (swipeDistance < -threshold && this.activeComponent != "Contact") {
     idComponent++;
