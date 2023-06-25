@@ -61,7 +61,7 @@
 /* theme */
 
 [theme="custom-dark"] {
-  background-image: url('/assets/70s.jpg');
+  background-image: url('/assets/60s.jpg');
   color: white;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   background-position: center;
@@ -69,7 +69,7 @@
   animation: backgroundAnimation 60s infinite linear;
 }
 [theme="custom-light"] {
-  background-image: url('/assets/60s.jpg');
+  background-image: url('/assets/70s.jpg');
   color: white;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   background-position: center;
