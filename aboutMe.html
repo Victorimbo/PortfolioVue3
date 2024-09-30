@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio</title>
+</head>
+<body class="min-h-screen flex flex-col bg-[url('/assets/cyberBack.jpg')]">
+    <header class="h-1/5">
+        <nav class="bg-[#002120] w-full p-5">
+            <div class="flex flex-wrap flex-col md:flex-row items-center">
+                <a class="flex title-font font-medium items-center text-[#4F8CE2] text-3xl mb-4 md:mb-0">
+                    <p>Victor Imbo</p>
+                </a>
+                <div class="md:ml-auto flex flex-wrap items-center text-base justify-end">
+                    <a href="index.html" class="mr-5 text-2xl hover:animate-glow text-[#4F8CE2]">Home</a>
+                    <a href="aboutMe.html" class="mr-5 text-2xl hover:animate-glow text-[#4F8CE2]">About me</a>
+                    <a href="projects.html" class="mr-5 text-2xl hover:animate-glow text-[#4F8CE2]">Projects</a>
+                    <a href="contact.html" class="mr-5 text-2xl hover:animate-glow text-[#4F8CE2]">Contact</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <div class="flex-grow flex flex-col md:flex-row items-center justify-center mx-auto max-w-7xl">
+        <div class="text-section w-full md:w-1/2 p-5">
+            <p class="animate-textAppear text-center text-[#4F8CE2] bg-[#002120] rounded text-2xl lg:mx-10 p-4">
+                Bored by studies in high school, I started to work at 18 in hospitality. I was a bartender for 7 years in France and United kingdom.
+                Some times ago I realised I wanted to go back to studies in something that intereted me : Programming. I started studying at Epitech in november 2022.
+                I have never code before but it feels great overall ! You want to know more about me ?
+                
+                My main competencies are :
+                
+                Conceptualize a web solution (write a specification, deploy a work environnment, Write a presentation, ...)
+                
+                Develop a web solution (write the solution code, implement front-end and database, deploy the solution, ...)
+                
+                Deploy a quality assurance system throughout the life cycle of a web solution (write documentation, improve the solution, fix bugs, ...)
+                <br>
+                <a href="CV.html" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Take a look at my CV</a>
+            </p>
+        </div>
+        
+        <div class="image-section w-full md:w-1/2 p-5">
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-4 animate-IconAppear">
+                <img src="assets/javascript.png" alt="Language 1" class="rounded w-1/2 h-auto max-w-xs" />
+                <img src="assets/react.png" alt="Language 2" class="rounded w-1/2 h-auto max-w-xs" />
+                <img src="assets/docker.png" alt="Language 3" class="rounded w-1/2 h-auto max-w-xs" />
+                <img src="assets/tailwind.png" alt="Language 4" class="rounded w-1/2 h-auto max-w-xs" />
+                <img src="assets/mongo.png" alt="Language 5" class="rounded w-1/2 h-auto max-w-xs" />
+                <img src="assets/symfony.png" alt="Language 6" class="rounded w-1/2 h-auto max-w-xs" />
+            </div>
+        </div>        
+    </div>
+    
+    <footer class="bg-[#002120] text-[#4F8CE2] text-center p-4">
+        <<p>&copy; 2024 victor1.imbo@epitech.eu</p>
+    </footer>
+</body>
+</html>

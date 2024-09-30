@@ -1,0 +1,13 @@
+body {
+    scroll-behavior: smooth;
+}
+
+.hidden-section {
+    position: relative;
+    left: -100%;
+    /* transition: left 0.5s ease; */
+}
+#newSection:target {
+    left: 0;
+    height: 100vh;
+}

@@ -1,13 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mon portfolio</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.js"></script>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="output.css">
+</head>
+<body class="flex flex-col min-h-screen bg-[url('/assets/cyberBack.jpg')]">
+    <header>
+        <nav class="bg-[#002120] w-full p-5">
+            <div class="flex flex-wrap flex-col md:flex-row items-center">
+                <a class="flex title-font font-medium items-center text-[#4F8CE2] text-3xl mb-4 md:mb-0">
+                    <p>Victor Imbo</p>
+                </a>
+                <div class="md:ml-auto flex flex-wrap items-center text-base justify-end">
+                    <a href="index.html" class="mr-5 text-2xl hover:animate-glow text-[#4F8CE2]">Home</a>
+                    <a href="aboutMe.html" class="mr-5 text-2xl hover:animate-glow text-[#4F8CE2]">About me</a>
+                    <a href="projects.html" class="mr-5 text-2xl hover:animate-glow text-[#4F8CE2]">Projects</a>
+                    <a href="contact.html" class="mr-5 text-2xl hover:animate-glow text-[#4F8CE2]">Contact</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="flex-grow flex items-center justify-center">
+        <h1 class="text-9xl text-[#4F8CE2] text-center animate-glow">Welcome to my portfolio</h1>
+    </main>
+    <footer class="bg-[#002120] text-[#4F8CE2] text-center p-4">
+        <p>&copy; 2024 victor1.imbo@epitech.eu</p>
+    </footer>
+</body>
 </html>

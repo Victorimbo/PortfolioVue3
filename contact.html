@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio</title>
+</head>
+<body class="min-h-screen flex flex-col bg-[url('/assets/cyberBack.jpg')]">
+    <header class="h-1/5">
+        <nav class="bg-[#002120] w-full p-5">
+            <div class="flex flex-wrap flex-col md:flex-row items-center">
+                <a class="flex title-font font-medium items-center text-[#4F8CE2] text-3xl mb-4 md:mb-0">
+                    <p>Victor Imbo</p>
+                </a>
+                <div class="md:ml-auto flex flex-wrap items-center text-base justify-end">
+                    <a href="index.html" class="mr-5 text-2xl hover:animate-glow text-[#4F8CE2]">Home</a>
+                    <a href="aboutMe.html" class="mr-5 text-2xl hover:animate-glow text-[#4F8CE2]">About me</a>
+                    <a href="projects.html" class="mr-5 text-2xl hover:animate-glow text-[#4F8CE2]">Projects</a>
+                    <a href="contact.html" class="mr-5 text-2xl hover:animate-glow text-[#4F8CE2]">Contact</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="flex-grow flex items-center justify-center p-5">
+        <div class="w-full max-w-lg bg-white rounded-lg shadow-lg p-8">
+            <h2 class="text-2xl font-bold text-center mb-6">Contact Me</h2>
+            <form>
+                <div class="mb-4">
+                    <label class="block text-gray-700 text-sm font-bold mb-2" for="name">Name</label>
+                    <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="name" type="text" placeholder="Your Name" required>
+                </div>
+                <div class="mb-4">
+                    <label class="block text-gray-700 text-sm font-bold mb-2" for="email">Email</label>
+                    <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="email" type="email" placeholder="Your Email" required>
+                </div>
+                <div class="mb-4">
+                    <label class="block text-gray-700 text-sm font-bold mb-2" for="message">Message</label>
+                    <textarea class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="message" rows="4" placeholder="Your Message" required></textarea>
+                </div>
+                <div class="flex items-center justify-between">
+                    <button class="bg-blue-700 hover:bg-blue-800 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="submit">
+                        Send Message
+                    </button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <footer class="bg-[#002120] text-[#4F8CE2] text-center p-4">
+        <p>&copy; 2024 victor1.imbo@epitech.eu</p>
+    </footer>
+</body>
+</html>
